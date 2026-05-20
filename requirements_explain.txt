@@ -1,0 +1,7 @@
+fastapi              = create AI API
+uvicorn              = run FastAPI server
+python-multipart     = receive uploaded image files
+opencv-python        = image processing
+deepface             = face recognition
+numpy                = image array processing
+pillow               = image handling
