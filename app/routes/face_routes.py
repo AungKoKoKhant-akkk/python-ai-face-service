@@ -1,5 +1,5 @@
 from fastapi import APIRouter, UploadFile, File, Form
-from app.services.face_service import register_face, recognize_face_dummy
+from app.services.face_service import register_face, recognize_face
 
 router = APIRouter()
 
@@ -13,7 +13,7 @@ async def register_student_face(
 
 
 @router.post("/recognize-face")
-async def recognize_face(
+async def recognize_student_face(
     file: UploadFile = File(...)
 ):
-    return await recognize_face_dummy(file)
+    return await recognize_face(file)
